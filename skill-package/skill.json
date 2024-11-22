@@ -1,0 +1,85 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "pt-BR": {
+          "summary": "Solução que utiliza técnicas como Pomodoro e exercícios guiados para ajudar pessoas a se concentrarem em suas atividades diárias.",
+          "examplePhrases": [
+            "Alexa, abrir foco total",
+            "Alexa, Foco Total",
+            "Alexa, abra Foco Total"
+          ],
+          "keywords": [],
+          "name": "Foco Total",
+          "description": "Foco Total é uma solução projetada para a Assistente Virtual Alexa, destinada a apoiar indivíduos diagnosticados com TDAH no gerenciamento de suas atividades do dia a dia. A skill combina ferramentas práticas, como a técnica Pomodoro, exercícios de respiração guiada e uma lista personalizada de tarefas, para ajudar os usuários a manterem o foco e a organização em suas rotinas.\n\nAviso importante: Esta skill não substitui orientação, diagnóstico ou tratamento médico profissional. Consulte sempre um profissional de saúde qualificado para qualquer dúvida ou necessidade relacionada à saúde. As informações apresentadas na skill são de caráter informativo e se baseiam em fontes confiáveis e aprovadas.\n\nAlém disso, todas as informações relacionadas a técnicas e benefícios são atribuídas a fontes reconhecidas na área de saúde comportamental (ABDA)",
+          "smallIconUri": "file://assets/images/pt-BR_smallIconUri.png",
+          "largeIconUri": "file://assets/images/pt-BR_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": false,
+      "testingInstructions": "{\"ask_dist_username\":\"\",\"ask_dist_password\":\"\",\"ask_dist_testing_instructions\":\"Sample Testing Instructions.\"}",
+      "category": "CHILDRENS_LIFE_SKILLS",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": [
+        "BR"
+      ]
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:376198402857:function:c0a23de8-0a61-4d08-9342-f7ebf664e4c8:Release_0"
+        },
+        "interfaces": [],
+        "locales": {},
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:376198402857:function:c0a23de8-0a61-4d08-9342-f7ebf664e4c8:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:376198402857:function:c0a23de8-0a61-4d08-9342-f7ebf664e4c8:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:376198402857:function:c0a23de8-0a61-4d08-9342-f7ebf664e4c8:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [
+      {
+        "name": "alexa::alerts:reminders:skill:readwrite"
+      },
+      {
+        "name": "alexa::person_id:read"
+      },
+      {
+        "name": "alexa::alerts:timers:skill:readwrite"
+      }
+    ],
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "pt-BR": {
+          "privacyPolicyUrl": "https://alexjunio92.github.io"
+        }
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "shoppingKit": {
+        "isShoppingActionsEnabled": false,
+        "isAmazonAssociatesOnAlexaEnabled": false
+      },
+      "usesPersonalInfo": false
+    }
+  }
+}

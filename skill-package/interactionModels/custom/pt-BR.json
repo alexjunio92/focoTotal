@@ -1,0 +1,103 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "info",
+              "type": "InformationSlot"
+            }
+          ],
+          "name": "GetInformationIntent",
+          "samples": [
+            "qual {info}",
+            "quais {info}",
+            "quantas {info}",
+            "quantos {info}",
+            "Conte {info}",
+            "Onde {info}",
+            "Como {info}",
+            "fale {info}",
+            "quais as {info}",
+            "qual a {info}",
+            "me conta {info}",
+            "me fala {info}",
+            "me conte mais sobre {info}",
+            "quero saber sobre {info}",
+            "quero saber {info}",
+            "{info}"
+          ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": [
+            "sim",
+            "pomodoro",
+            "foco total"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "tranquilizar",
+                  "respiração",
+                  "respiração guiada"
+                ],
+                "value": "respiração"
+              },
+              "id": "RESPIRACAO"
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "tarefas",
+                  "tarefa",
+                  "lista",
+                  "lista de tarefas"
+                ],
+                "value": "tarefa"
+              },
+              "id": "TAREFA"
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "focar",
+                  "técnica",
+                  "pomodoro",
+                  "foco",
+                  "tomate"
+                ],
+                "value": "foco"
+              },
+              "id": "FOCO"
+            }
+          ],
+          "name": "InformationSlot"
+        }
+      ],
+      "invocationName": "foco total"
+    }
+  }
+}
